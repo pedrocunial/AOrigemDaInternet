@@ -1,0 +1,10 @@
+# Emacs files
+\#*
+*~
+\#*\#
+
+# Compiled LaTeX files
+/Final/*.aux
+/Final/*.log
+/Final/*.pdf
+/Final/*.gz
