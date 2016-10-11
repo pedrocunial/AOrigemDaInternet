@@ -8,3 +8,6 @@
 /Final/*.log
 /Final/*.pdf
 /Final/*.gz
+/Final/*.fd*
+/Final/*.fls
+/Final/auto/*
