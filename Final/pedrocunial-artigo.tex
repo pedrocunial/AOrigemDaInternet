@@ -62,6 +62,8 @@
 \usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{dirtytalk}
+
 
 % Some very useful LaTeX packages include:
 % (uncomment the ones you want to load)
@@ -519,14 +521,48 @@
     da ARPANET (ARPA NETwork)~\cite{internethistory}. 
   \end{quote}
 
-  Fora neste estudo de quatro meses que surgiria a primeira versão da ARPANET
-  (ARPA NETwork).
+  Pela confidencialidade do projeto, não sabemos muito sobre o que ocorrera de
+  fato nestes primeiros anos, apenas que em 1968 mais \$63.000 seriam investidos
+  no projeto, o qual teria sua segunda versão liberada em 1969,
+  \say{com uma revolução nas comunicações pelas palavras
+    ``log in''}~\cite{fromarpanet}.
+
 	
 \section{Primeira versão}
-	Pretendo descrever processos associados à criação e resposta às primeiras versões da ARPANET. Imagino que eu vá bater com o conceito de RFC já na seção anterior, mas se não for o caso, certamente será descrito nesta seção.
+	% Pretendo descrever processos associados à criação e resposta às primeiras versões da ARPANET. Imagino que eu vá bater com o conceito de RFC já na seção anterior, mas se não for o caso, certamente será descrito nesta seção.
 	
-	Acredito que tenho muito para extrair do "Internet History"~\cite{internethistory}, mas principalmente do "The Framing Years"~\cite{framingyears}, no qual as primeiras seções são especialmente uteis.
-	
+	% Acredito que tenho muito para extrair do "Internet History"~\cite{internethistory}, mas principalmente do "The Framing Years"~\cite{framingyears}, no qual as primeiras seções são especialmente uteis.
+
+  Fora somente nessa segunda versão que o mundo acadêmico entraria em contato
+  com o invento, conectando computadores da UCLA, UC-Santa Barbara, Stanford e
+  da Universidade de Utah~\cite{fromarpanet}.
+
+  No entanto, ainda nesta segunda versão, não existiam padrões no formato das
+  comunicações, gerando um verdadeiro caos, onde por mais que mensagens fossem
+  enviadas, poucas conseguiam de fato ser decodificadas dada esta não
+  padronização oficial.
+
+  Buscando solucionar o problema, foi criado o padrão dos Request For Comments
+  (RFC) em 1969 por Steve Crocker e atualmente mantidos pela Internet
+  Engineering Task Force (IETF), como documentado no RFC 100:
+
+  \begin{quote}
+
+    Sob a pressão de ``colocar as coisa para funcionar'' (...) definimos o
+    primeiro conjunto de protocolos, incluindo somente o \emph{Telnet} e o
+    \emph{File Transfer Protocol (FTP)}. Em Dezembro de 1969 nos encontramos com
+    Larry Roberts \emph{(Universidade de Utah)}, com quem sofremos nossa
+    primeira experiência direta com ``redirecionamento''.
+    Larry deixou bem claro que nosso primeiro passo não fora grande o
+    suficiente e que precisaríamos voltar aos planejamentos.~\cite{rfc100}
+    
+  \end{quote}
+
+  Em 2011 já haviam mais de 6.200 documentos~\cite{framingyears}, que vão desda
+  descrição de sistemas sociais e técnicos (RFC 2555), guias para criação de
+  redes (RFC 356), ``netiqueta'' (RFC 1855)~\cite{framingyears}. Hoje os
+  documentos são considerados não só protocolos, mas também documentos
+  acadêmicos, que vão desdo ramo da ciência da computação até as ciências sociais.
 
 \section{Surgimento do TCP}
 	O TCP fora criado dentro da própria DARPA e inicialmente não fazia parte do padrão utilizado pela ARPANET. Nesta parte do artigo pretendo expandir dentro desta temática. Em "Framing Years"~\cite{framingyears} o autor expande um pouco no tema, mas acredito que precisarei de mais fontes para esta parte.
@@ -543,8 +579,8 @@
 
 
 % use section* for acknowledgment
-\section*{Acknowledgment}
-	Gostaria de agradecer à todos aqueles que me apoiaram, ao stackoverflow e à minha mãe.
+% \section*{Acknowledgment}
+% 	Gostaria de agradecer à todos aqueles que me apoiaram, ao stackoverflow e à minha mãe.
 
 
 
@@ -588,6 +624,11 @@
 \bibitem{twobit}
 	K. Nichols, V. Jacobson, L. Zhang. \emph{A Two-bit Differentiated Services Architecture for the Internet}. \hskip 1em plus 0.5em minus 0.4em \relax The Internet Society. 1999.
 
+\bibitem{rfc100}
+  P. Karp. \emph{RFC 100}. \hskip 1em plus 0.5em minus
+  0.4em \relax Network Working Group. 1971.
+
+  
 \bibliographystyle{IEEEtran}
 %% \newcommand{\BIBdecl}{\bfseries\setlength
 %%     {\itemsep}{1\baselineskip plus 0.1\baselineskip minus 0.1\baselineskip}

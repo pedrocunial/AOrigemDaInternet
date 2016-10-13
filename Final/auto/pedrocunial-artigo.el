@@ -11,11 +11,13 @@
     "IEEEtran10"
     "babel"
     "inputenc"
-    "fontenc")
+    "fontenc"
+    "dirtytalk")
    (LaTeX-add-bibitems
     "fromarpanet"
     "internethistory"
     "framingyears"
-    "twobit"))
+    "twobit"
+    "rfc100"))
  :latex)
 
