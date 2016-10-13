@@ -18,6 +18,7 @@
     "internethistory"
     "framingyears"
     "twobit"
-    "rfc100"))
+    "rfc100"
+    "nsfnet"))
  :latex)
 

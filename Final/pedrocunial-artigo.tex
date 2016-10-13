@@ -370,9 +370,12 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-	Este artigo busca descrever o processo da criação da Internet em seu primórdio, almejando compreender o motivo dos formatos atuais pelos quais compartilhamos dados pela óptica das telecomunicações.
+	Este artigo busca descrever o processo da criação da Internet em seu
+  primórdio, almejando compreender o motivo dos formatos atuais pelos quais
+  compartilhamos dados pela óptica das telecomunicações e política. Explorando
+  temáticas sobre RFC, modelo TCP/IP e a história pré, pós e durante a ARPANET.
 \end{abstract}
-
+\end{document}
 % no keyword
 
 
@@ -592,7 +595,8 @@
   qual buscava especificar a forma com que dados deveriam ser direcionados, que a
   ARPANET abandonaria o NCP, adotando o TCP/IP (RFC 714, junção dos dois
   protocolos TCP e IP em um só), desenvolvido por
-  Vinton Cerf e Robert Kahn~\cite{fromarpanet}, como o seu novo padrão em Dezembro de 1974.
+  Vinton Cerf e Robert Kahn~\cite{fromarpanet}, como um padrão para todos os
+  computadores que se conectassem nela.
 
 % \section{TCP/IP e como ele fora adotado como padrão}
 % 	Aqui pretendo expandir no conceito dos RFC's iniciais e como o formato
@@ -603,7 +607,62 @@
 %   referência melhor.
 	
 \section{Da ARPANET para a Internet}
-	Com o panorama histórico já traçado, pretendo concluir meu texto trazendo algumas novidades adicionadas em RFC's mais recentes e talvez alguma provocação, como a do artigo "Two-bit Differentiated"~\cite{twobit}. 
+	% Com o panorama histórico já traçado, pretendo concluir meu texto trazendo algumas novidades adicionadas em RFC's mais recentes e talvez alguma provocação, como a do artigo "Two-bit Differentiated"~\cite{twobit}. 
+
+  No final da década de 1980, a Fundação Nacional de Ciências começou a
+  construir o NSFNET, um supercomputador com o intuito designar e centralizar as
+  ligações de rede da ARPANET~\cite{nsfnet} -- aos que cuidam do processo de designação e
+  ligação chamamos de \emph{backbone}.
+
+  Além de ser o backbone da ARPNET, o NSFNET também servia como material de
+  estudo para membros de diversas universidades, como a de Minnesota, e
+  corporações, como a Bell Labs, por exemplo~\cite{nsfnet}.
+
+  Em 1989, o NSFNET teve a velocidade do serviço do seu backbone aumentada de T1
+  (1,5Mpbs) para T3 (45Mpbs), o que causaria um enorme fluxo de dados no NSFNET
+  e uma responsabilidade maior do que estavam prontos para lidar, culminando no
+  início de uma nova era: A era da Internet.
+
+  \begin{quote}
+
+    Em 1990 e 1991, o time do NSFNET fora reestruturado. Uma entidade de
+    fins não lucrativos chamada Advanced Network and Services continuou provendo
+    o antigo serviço de backbone (...), enquanto uma de fins lucrativos
+    tornar-se-ia um desmembramento da matriz com intuito de habilitar o
+    desenvolvimento comercial do projeto.~\cite{nsfnet}
+
+  \end{quote}
+
+  Inaugurado em 1991, o novo serviço T3 marcou o início do que conhecemos como
+  Internet, já linkando mais de 3.500 redes e 16 sites em seu primeiro dia de
+  funcionamento~\cite{nsfnet}.
+
+  Ainda em Março de 1991 a Internet já transmitia 1.3 trilhões de bytes de
+  informação por mês, valor que chegaria à quase 18 trilhões ao final de 1994,
+  equivalente eletrônico à mover o conteúdo completo da Biblioteca do Congresso
+  Americano à cada quatro meses~\cite{nsfnet}.
+
+\section{Considerações Finais}
+
+  \begin{quote}
+
+    Em 1995, já estava claro que a Internet estava crescendo drasticamente.
+    NSFNET pulverizou o crescimento da Internet para todos os tipos de
+    organizações. A NSF havia gasto cerca de \$30 milhões no NSFNET, assistido
+    de diversos investidores externos, como a IBM e a MCI. Como resultado, 1995
+    viu cerca de 100.000 redes -- tanto públicas como privadas -- em operação ao
+    redor de todo o país.~\cite{nsfnet}
+    
+  \end{quote}
+
+  Evidentemente que não da mesma forma que nos anos iniciais, a Internet
+  continua crescendo dada a sua reduzida difusão em países ainda \emph{em
+    desenvolvimento}, ao passo que o modelo TCP/IP continua sendo utilizado,
+  ainda que com complementos -- como o UDP, que serve como uma espécie de
+  \emph{checksum} associado ao pacote -- RFCs continuam sendo publicados até
+  hoje e, ainda que em menor quantidade, continuam de extrema importância quanto
+  à regulação do uso de novas tecnologias.
+  
 
 % conference papers do not normally have an appendix
 
@@ -621,7 +680,7 @@
 % number - used to balance the columns on the last page
 % adjust value as needed - may need to be readjusted if
 % the document is modified later
-%\IEEEtriggeratref{8}
+\IEEEtriggeratref{8}
 % The "triggered" command can be changed if desired:
 %\IEEEtriggercmd{\enlargethispage{-5in}}
 
@@ -658,6 +717,10 @@
   P. Karp. \emph{RFC 100}. \hskip 1em plus 0.5em minus
   0.4em \relax Network Working Group. 1971.
 
+\bibitem{nsfnet}
+  National Science Foundation. \emph{The Internet: changing the way we
+    communicate}. \hskip 1em plus 0.5em minus 0.4em \relax Estados Unidos da
+  América, 2014.
   
 \bibliographystyle{IEEEtran}
 %% \newcommand{\BIBdecl}{\bfseries\setlength
