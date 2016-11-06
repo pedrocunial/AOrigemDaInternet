@@ -1,4 +1,3 @@
-
 %% bare_conf.tex
 %% V1.4b
 %% 2015/08/26
@@ -62,7 +61,7 @@
 \usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{dirtytalk}
+%\usepackage{dirtytalk}
 
 
 % Some very useful LaTeX packages include:
@@ -328,8 +327,8 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Pedro Cunial}
-	\IEEEauthorblockA{Insper - Instituto de Ensino e Pesquisa\\
+\author{\IEEEauthorblockN{Pedro Cunial Campos}
+	\IEEEauthorblockA{Insper\\
 		São Paulo, SP\\
 		pedrocc4@al.insper.edu.br}}
 
@@ -370,12 +369,9 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-	Este artigo busca descrever o processo da criação da Internet em seu
-  primórdio, almejando compreender o motivo dos formatos atuais pelos quais
-  compartilhamos dados pela óptica das telecomunicações e política. Explorando
-  temáticas sobre RFC, modelo TCP/IP e a história pré, pós e durante a ARPANET.
+  
+  Explorando temáticas sobre RFC, modelo TCP/IP e a história pré, pós e durante a ARPANET, este artigo busca descrever o processo da criação da Internet em seu primórdio e seu desenvolvimento e evolução, traçando paralelos com o que conhecemos hoje por internet e almejando compreender os motivos pelos quais os atuais formatos e protocolos de comunicação são utilizados, sob a óptica das telecomunicações.
 \end{abstract}
-\end{document}
 % no keyword
 
 
@@ -500,19 +496,14 @@
 \section{Introdução}
 % no \IEEEPARstart
 	% Neste artigo pretendo dissecar os passos iniciais dos aspectos de telecomunicação da Internet, desdo seu processo inicial de ideação (em 1966), enquanto ainda era um projeto fechado, até a sua abertura ao público e revisões baseadas em seus primeiros dias, chegando ao início da década de 1980.
-  Em 1962 a Agência de Projetos de Pesquisa Avançada (ARPA) criaria um novo
-  braço, o Escritório de Técnicas de Processamento de Informações (IPTO), o qual se
+  Em 1962, nos Estados Unidos, a Agência de Projetos de Pesquisa Avançada (Advanced Research Projects Agency -- ARPA) criaria um novo
+  braço, o Escritório de Técnicas de Processamento de Informações (Information Processing Technical Office -- IPTO), o qual se
   tornaria enorme referência em estudos de ciência da computação nos Estados
   Unidos durante seu tempo~\cite{fromarpanet}, enriquecendo tremendamente os
   estudos em áreas como a de processamento de gráficos, inteligência artificial e
   multitasking.
 
-  Mas fora em 1966, quando Robert Taylor iniciou seus estudos em redes que a
-  Internet seria idealizada pela primeira vez. A proposta de Taylor consistia em
-  suprir duas necessidades: A redução de custos em
-  computação pelo compartilhamento de computadores por contratantes ao redor do
-  país e o avançar na transferência de informações entre máquinas à
-  distância~\cite{fromarpanet}.
+  Mas fora em 1966, quando Robert Taylor iniciou seus estudos em redes e assumira a liderança do IPTO que a Internet seria idealizada pela primeira vez. A proposta de Taylor consistia em suprir duas necessidades: a redução de custos em computação pelo compartilhamento de computadores por contratantes ao redor do país e o avanço na transferência de informações entre máquinas à distância~\cite{fromarpanet}.
 
 \section{Primeiros passos}
 %	Neste parágrafo pretendo explicar os processos iniciais de ideação, anteriores às primeiras versões da mesma. Pretendo basear este parágrafo fortemente na descrição do período pelo artigo "From ARPANET to Internet"~\cite{fromarpanet}, prendendo-me aos períodos anteriores ao ano de 1969, quando a primeira versão da ARPANET for publicada.
@@ -525,10 +516,9 @@
   \end{quote}
 
   Pela confidencialidade do projeto, não sabemos muito sobre o que ocorrera de
-  fato nestes primeiros anos, apenas que em 1968 mais \$63.000 seriam investidos
-  no projeto, o qual teria sua segunda versão liberada em 1969,
-  \say{com uma revolução nas comunicações pelas palavras
-    ``log in''}~\cite{fromarpanet}.
+  fato nestes primeiros anos, apenas que em 1968 mais \$63.000 seriam investidos no projeto, o qual teria sua segunda versão liberada em 1969,
+   "com uma revolução nas comunicações pelas palavras
+    \emph{log in}"~\cite{fromarpanet}.
 
 	
 \section{O Caos}
