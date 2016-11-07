@@ -117,22 +117,22 @@
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
+   \usepackage[pdftex]{graphicx}
   % declare the path(s) where your graphic files are
-  % \graphicspath{{../pdf/}{../jpeg/}}
+   \graphicspath{{../pdf/}{../jpeg/}{./}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+   \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
 \else
   % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
   % will default to the driver specified in the system graphics.cfg if no
   % driver is specified.
-  % \usepackage[dvips]{graphicx}
+   \usepackage[dvips]{graphicx}
   % declare the path(s) where your graphic files are
-  % \graphicspath{{../eps/}}
+   \graphicspath{{../eps/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.eps}
+   \DeclareGraphicsExtensions{.eps}
 \fi
 % graphicx was written by David Carlisle and Sebastian Rahtz. It is
 % required if you want graphics, photos, etc. graphicx.sty is already
@@ -601,8 +601,18 @@ Dado a tensão entre potências que definia a Guerra Fria, os estudos de Taylor 
 
 	Definido como "um meio para troca de mensagens digitais entre usuários de computadores", o email surgira com base na utilização do FTP para troca de mensagens~\cite{rfc561}. No entanto, a falta de padronização na escrita destes "correspondências pela rede" (Network Mail, como eram chamadas), culminou no primeiro caso no qual a Network Working Group publicaria um RFC voltado à formatação e etiqueta na comunicação entre usuários pela sua rede, o RFC 561 onde é definido a formatação de cabeçalhos destas "correspondências" (repare que na época ainda não existia o termo \emph{email}).~\cite{rfc561}
 	
+	No entanto, a falta de padronização nos pacotes de comunicação ainda eram um problema na época e a comunicação por \emph{Network Mail} não fugiria a esta regra. Foi com isso que em 1981 o "Simple Mail Transfer Protocol" fora criado, buscando maior eficiência e confiabilidade na transferência destes dados.~\cite{rfc788}. Um ponto à ser retomado 
 	
-  
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=3.1in]{smtp}
+	\caption{Gráfico utilizado para ilustrar a comunicação por SMTP,
+	em RFC 821.~\cite{rfc821}}
+	\label{smtp_fig}
+\end{figure}
+
+	A figura acima aparece no RFC 821, com o intuito de ilustrar o processo de envio e requerimento de dados por ambas as partes participadoras da comunicação por SMTP. Repare que o SMTP-Receptor pode ou não ser o destinatário final (permitindo que dados fossem retransmitidos, ou passassem por roteadores intermediários) e que a imagem fora feita inteiramente com caracteres da tabela ASCII, os quais eram a única forma pela qual dados poderiam ser transferidos no SMTP idealizado naquele período.~\cite{rfc821}
+
 
 	
 \section{Da ARPANET para a Internet}
@@ -729,6 +739,9 @@ Dado a tensão entre potências que definia a Guerra Fria, os estudos de Taylor 
   
 \bibitem{rfc561}
  A. Bhushan, K. Pogran, R. Tomlinson, J. White. \emph{RFC 561 -- Standardizing Network Mail Headers}. \hskip 1em plus 0.5em minus 0.4em \relax Network Working Group. 1973.
+ 
+\bibitem{rfc821}
+ J. Postel. \emph{RFC 821 -- SIMPLE MAIL TRANSFER PROTOCOL}. \hskip 1em plus 0.5em minus 0.4em \relax Network Working Group. 1982.
   
 \bibliographystyle{IEEEtran}
 %% \newcommand{\BIBdecl}{\bfseries\setlength
