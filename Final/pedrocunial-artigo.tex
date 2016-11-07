@@ -507,7 +507,7 @@
 
 \section{Primeiros passos}
 %	Neste parágrafo pretendo explicar os processos iniciais de ideação, anteriores às primeiras versões da mesma. Pretendo basear este parágrafo fortemente na descrição do período pelo artigo "From ARPANET to Internet"~\cite{fromarpanet}, prendendo-me aos períodos anteriores ao ano de 1969, quando a primeira versão da ARPANET for publicada.
-Dado a tensão entre potências que definia a Guerra Fria, os estudos de Taylor e sua equipe mantiveram-se sigilosos, mas sabemos que tornar-se-iam, cada vez mais, de extremo interesse para o Estado norte-americano, o qual investiria em peso no projeto.
+Dado a tensão entre potências que definia a Guerra Fria, os estudos de Taylor e sua equipe mantiveram-se sigilosos,mas que tornar-se-iam, cada vez mais, de extremo interesse para o Estado norte-americano, o qual investiria em peso no projeto.
   \begin{quote}
     Quando o Departamento de Defesa (Department of Defense -- DOD) emitiu um contrato de \$19.800 em
     6 de Dezembro de 1967 sob o proposito de estudar "design e especificação de uma
@@ -585,8 +585,10 @@ Dado a tensão entre potências que definia a Guerra Fria, os estudos de Taylor 
   ARPANET abandonaria o NCP, adotando o TCP/IP (RFC 714, junção dos dois
   protocolos TCP e IP em um só), desenvolvido por
   Vinton Cerf e Robert Kahn~\cite{fromarpanet}, como um padrão para todos os
-  computadores que se conectassem nela.
-
+  computadores que se conectassem nela, como documentado no RFC 801~\cite{rfc801} -- intitulado de \emph{NCP/TCP TRANSITION PLAN}, o RFC 801 busca não só argumentar à favor do modelo TCP/IP como também declarar um plano para que a transição fosse bem sucedida.
+  
+  Baseando-se no sucesso do TCP/IP em implementações, o documento urge pela implementação do modelo em todas as redes que ainda se comunicavam por NCP com início em primeiro de janeiro de 1982 e um prazo máximo de primeiro de janeiro  de 1983~\cite{rfc801}.
+  
 % \section{TCP/IP e como ele fora adotado como padrão}
 % 	Aqui pretendo expandir no conceito dos RFC's iniciais e como o formato
 %   original fora substituído pelo modelo TCP/IP. Sinceramente, ainda não tenho
@@ -594,6 +596,14 @@ Dado a tensão entre potências que definia a Guerra Fria, os estudos de Taylor 
 %   De qualquer forma, o "Framing Years"~\cite{framingyears} fala mais sobre esta
 %   transição do qe os outros artigos, por isso acredito que ele seja uma
 %   referência melhor.
+
+\section{O Email}
+
+	Definido como "um meio para troca de mensagens digitais entre usuários de computadores", o email surgira com base na utilização do FTP para troca de mensagens~\cite{rfc561}. No entanto, a falta de padronização na escrita destes "correspondências pela rede" (Network Mail, como eram chamadas), culminou no primeiro caso no qual a Network Working Group publicaria um RFC voltado à formatação e etiqueta na comunicação entre usuários pela sua rede, o RFC 561 onde é definido a formatação de cabeçalhos destas "correspondências" (repare que na época ainda não existia o termo \emph{email}).~\cite{rfc561}
+	
+	
+  
+
 	
 \section{Da ARPANET para a Internet}
 	% Com o panorama histórico já traçado, pretendo concluir meu texto trazendo algumas novidades adicionadas em RFC's mais recentes e talvez alguma provocação, como a do artigo "Two-bit Differentiated"~\cite{twobit}. 
@@ -635,7 +645,7 @@ Dado a tensão entre potências que definia a Guerra Fria, os estudos de Taylor 
 
   \begin{quote}
 
-    Em 1995, já estava claro que a Internet estava crescendo drasticamente.
+    Em 1995, já estava claro que a Internet crescia drasticamente.
     NSFNET pulverizou o crescimento da Internet para todos os tipos de
     organizações. A NSF havia gasto cerca de \$30 milhões no NSFNET, assistido
     de diversos investidores externos, como a IBM e a MCI. Como resultado, 1995
@@ -710,6 +720,15 @@ Dado a tensão entre potências que definia a Guerra Fria, os estudos de Taylor 
   National Science Foundation. \emph{The Internet: changing the way we
     communicate}. \hskip 1em plus 0.5em minus 0.4em \relax Estados Unidos da
   América, 2014.
+  
+\bibitem{rfc801}
+  J. Postel. \emph{RFC 801 -- NCP/TCP TRANSITION PLAN}. \hskip 1em plus 0.5em minus 0.4em \relax Network Working Group. 1981.
+
+\bibitem{rfc788}
+  J. Postel. \emph{RFC 788 -- SIMPLE MAIL TRANSFER PROTOCOL}. \hskip 1em plus 0.5em minus 0.4em \relax Network Working Group. 1981.
+  
+\bibitem{rfc561}
+ A. Bhushan, K. Pogran, R. Tomlinson, J. White. \emph{RFC 561 -- Standardizing Network Mail Headers}. \hskip 1em plus 0.5em minus 0.4em \relax Network Working Group. 1973.
   
 \bibliographystyle{IEEEtran}
 %% \newcommand{\BIBdecl}{\bfseries\setlength
