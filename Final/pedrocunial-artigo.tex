@@ -395,7 +395,9 @@ SMTP,
 % \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
 % \fi
 %
-% For peerreview papers, this IEEEtran command inserts a page break and
+% For peerrev
+% \end{figure*}
+% iew papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
 
@@ -508,12 +510,13 @@ SMTP,
 \section{Introdução}
 % no \IEEEPARstart
 	% Neste artigo pretendo dissecar os passos iniciais dos aspectos de telecomunicação da Internet, desdo seu processo inicial de ideação (em 1966), enquanto ainda era um projeto fechado, até a sua abertura ao público e revisões baseadas em seus primeiros dias, chegando ao início da década de 1980.
-  Em 1962, nos Estados Unidos, a Agência de Projetos de Pesquisa Avançada (Advanced Research Projects Agency -- ARPA) criaria um novo
-  braço, o Escritório de Técnicas de Processamento de Informações (Information Processing Technical Office -- IPTO), o qual se
+  Em 1962, nos Estados Unidos, a Agência de Projetos de Pesquisa Avançada (\emph{Advanced Research Projects Agency}, ARPA) criaria um novo
+  braço, o Escritório de Técnicas de Processamento de Informações
+  (\emph{Information Processing Technical Office}, IPTO), o qual se
   tornaria enorme referência em estudos de ciência da computação nos Estados
   Unidos durante seu tempo~\cite{fromarpanet}, enriquecendo tremendamente os
   estudos em áreas como a de processamento de gráficos, inteligência artificial e
-  multitasking.
+  \emph{multitasking}.
 
   Mas fora em 1966, quando Robert Taylor iniciou seus estudos em redes e assumira a liderança do IPTO que a Internet seria idealizada pela primeira vez. A proposta de Taylor consistia em suprir duas necessidades: a redução de custos em computação pelo compartilhamento de computadores por contratantes ao redor do país e o avanço na transferência de informações entre máquinas à distância~\cite{fromarpanet}.
 
@@ -521,11 +524,11 @@ SMTP,
 %	Neste parágrafo pretendo explicar os processos iniciais de ideação, anteriores às primeiras versões da mesma. Pretendo basear este parágrafo fortemente na descrição do período pelo artigo "From ARPANET to Internet"~\cite{fromarpanet}, prendendo-me aos períodos anteriores ao ano de 1969, quando a primeira versão da ARPANET for publicada.
 Dado a tensão entre potências que definia a Guerra Fria, os estudos de Taylor e sua equipe mantiveram-se sigilosos,mas que tornar-se-iam, cada vez mais, de extremo interesse para o Estado norte-americano, o qual investiria em peso no projeto.
   \begin{quote}
-    Quando o Departamento de Defesa (Department of Defense -- DOD) emitiu um contrato de \$19.800 em
+    Quando o Departamento de Defesa (\emph{Department of Defense}, DOD) emitiu um contrato de \$19.800 em
     6 de Dezembro de 1967 sob o proposito de estudar "design e especificação de uma
     rede de computadores", o mundo não se deu conta do que estava prestes à
     acontecer. Fora neste estudo de quatro meses que surgiria a primeira versão
-    da ARPANET (ARPA NETwork)~\cite{internethistory}. 
+    da ARPANET (\emph{ARPA NETwork})~\cite{internethistory}. 
   \end{quote}
 
   Pela confidencialidade do projeto, não se sabe exatamente o que ocorrera de
@@ -545,8 +548,10 @@ Dado a tensão entre potências que definia a Guerra Fria, os estudos de Taylor 
   No entanto, ainda não existiam padrões no formato das
   comunicações, gerando um verdadeiro caos, onde os destinatários das mensagens nem sempre conseguiam decodificar o sinal recebido, ou, quando conseguiam, não eram capazes de decifrar seu conteúdo, dada as diferentes maneiras pelas quais os sinais eram codificados ao serem enviados por diferentes emissores.%
 
-  Buscando solucionar o problema, Steve Crocker, estudante da UCLA que trabalhara no desenvolvimento das comunicações da ARPANET desde sua primeira abertura à sua universidade, criaria o padrão dos Request For Comments
-  (RFC) em 1969, que seriam mantidos pelo "Grupo de Trabalho sobre Redes" (do qual Crocker fora parte crítica para criação) e atualmente mantidos pela Internet Engineering Task Force (IETF), como documentado no RFC 100:
+  Buscando solucionar o problema, Steve Crocker, estudante da UCLA que trabalhara no desenvolvimento das comunicações da ARPANET desde sua primeira abertura à sua universidade, criaria o padrão dos \emph{Request For Comments}
+  (RFC) em 1969, que seriam mantidos pelo Grupo de Trabalho sobre Redes
+  (\emph{Network Working Group}), do qual Crocker fora parte crítica para
+  criação, e atualmente mantidos pela \emph{Internet Engineering Task Force} (IETF), como documentado no RFC 100:
 
   \begin{quote}
 
@@ -576,11 +581,8 @@ Dado a tensão entre potências que definia a Guerra Fria, os estudos de Taylor 
 	% Dentro das fontes já utilizadas, o "Internet History"~\cite{internethistory} possui um pouco mais de conteúdo no assunto, mas nada tão profundo quanto eu gostaria.
 
   Motivado pelo discurso e problema de redirecionamento mostrado por Larry
-  Roberts e citado no RFC 100~\cite{rfc100}, em 1973 o Transmission Control
-  Protocol (TCP) fora criado~\cite{framingyears}, sob o RFC de número 604. Um
-  protocolo que buscava especificar como enviar informações de um programa em um
-  dado computador para outro programa em outro computador, buscando substituir o
-  então padrão do NCP, o qual também fora apresentado no RFC 100:
+  Roberts e citado no RFC 100~\cite{rfc100}, em 1973 o Protocolo de Controle de
+  Transmissão (\emph{Transmission Control Protocol}, TCP) fora criado~\cite{framingyears}, sob o RFC de número 604. Um protocolo que buscava especificar como enviar informações de um programa em um dado computador para outro programa em outro computador, buscando substituir o então padrão do NCP, o qual também fora apresentado no RFC 100:
 
   \begin{quote}
 
@@ -592,7 +594,8 @@ Dado a tensão entre potências que definia a Guerra Fria, os estudos de Taylor 
     
   \end{quote}
   
-  No entanto, fora somente em conjunto com o Internet Protocol (IP, RFC 675), o
+  No entanto, fora somente em conjunto com o Protocolo da Internet
+  (\emph{Internet Protocol}, IP -- RFC 675), o
   qual buscava especificar a forma com que dados deveriam ser direcionados, que a
   ARPANET abandonaria o NCP, adotando o TCP/IP (RFC 714, junção dos dois
   protocolos TCP e IP em um só), desenvolvido por
